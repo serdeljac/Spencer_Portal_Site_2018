@@ -1,0 +1,441 @@
+/*****************************************************
+  Imports and generic defaults
+*****************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+a, a:hover {text-decoration: none; color: #fff;}
+
+body {
+  min-width: 100%;
+  color: #fff;
+  background-color: #2c2528;
+  font-family: 'Roboto', sans-serif;
+  }
+
+/*****************************************************
+  SASS Mixins
+*****************************************************/
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+  }
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+  }
+
+/*****************************************************
+  Footer
+*****************************************************/
+
+.pageload {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  background: #2c2528;
+  div {
+    margin: 100px auto 0;
+    width: 200px;
+    @include animation(loadThrottle 1.5s linear infinite);
+    img {width: 100%;}
+    }
+  }
+
+@-webkit-keyframes loadThrottle {
+  0% {margin-top: 100px; width: 200px;}
+  30% {margin-top: 50px; width: 300px;}
+  70% {margin-top: 100px; width: 200px;}
+  100% {margin-top: 100px; width: 200px;}
+  }
+
+@-moz-keyframes loadThrottle {
+  0% {margin-top: 100px; width: 200px;}
+  30% {margin-top: 50px; width: 300px;}
+  70% {margin-top: 100px; width: 200px;}
+  100% {margin-top: 100px; width: 200px;}
+  }
+
+@keyframes loadThrottle {
+  0% {margin-top: 100px; width: 200px;}
+  30% {margin-top: 50px; width: 300px;}
+  70% {margin-top: 100px; width: 200px;}
+  100% {margin-top: 100px; width: 200px;}
+  }
+
+/*****************************************************
+  Navigation
+*****************************************************/
+
+nav {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+  background-color: #2c2528;
+  z-index: 998;
+  ul li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+    p {@include transition(all .23s ease);}
+    a {font: bold 1.6em 'Libre Baskerville', serif; color: #bbb;}
+    &:hover a {color: #fff}
+    }
+  }
+
+aside {
+  position: fixed;
+  z-index: 999;
+  top: 1px;
+  right: 10px;
+  background-color: #2c2528;
+  div {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 0;
+    float: left;
+    background-image: url(../img/sprite.png);
+    background-size: 300px 100px;
+    &.facebook {background-position: 0px 0px}
+    &.twitter {background-position: -50px 0px}
+    &.instagram {background-position: -100px 0px}
+    &.tumblr {background-position: -150px 0px}
+    &.youtube {background-position: -200px 0px}
+    &.email {background-position: -250px 0px}
+    &.facebook:hover {background-position: 0px -50px}
+    &.twitter:hover {background-position: -50px -50px}
+    &.instagram:hover {background-position: -100px -50px}
+    &.tumblr:hover {background-position: -150px -50px}
+    &.youtube:hover {background-position: -200px -50px}
+    &.email:hover {background-position: -250px -50px}
+    }
+  }
+
+@media only screen and (max-width: 1100px) {
+  nav ul li {
+    padding: 0;
+    width: 20%;
+    }
+  aside {
+    width: 60px;
+    top: 100px;
+    right: 0px;
+    div {
+      width: 40px;
+      height: 40px;
+      background-size: 240px 80px;
+      margin: 10px;
+      &.facebook {background-position: 0px 0px}
+      &.twitter {background-position: -40px 0px}
+      &.instagram {background-position: -80px 0px}
+      &.tumblr {background-position: -120px 0px}
+      &.youtube {background-position: -160px 0px}
+      &.email {background-position: -200px 0px}
+      &.facebook:hover {background-position: 0px -40px}
+      &.twitter:hover {background-position: -40px -40px}
+      &.instagram:hover {background-position: -80px -40px}
+      &.tumblr:hover {background-position: -120px -40px}
+      &.youtube:hover {background-position: -160px -40px}
+      &.email:hover {background-position: -200px -40px}
+      }
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+  nav ul li a {font-size: 3.0vw;}
+  }
+
+
+
+
+
+
+/*****************************************************
+  Header
+*****************************************************/
+
+header {
+  width: 100%;
+  float: left;
+  padding-top: 75px;
+  color: #fff;
+  min-height: 45vw;
+  background: url(../img/headerblur.png) top center/cover no-repeat fixed;
+  .banner {
+    margin-top: 3%;
+    min-width: 100%;
+    height: 365px;
+    float: left;
+    background: url(../img/headerbg.png) center top/cover no-repeat;
+    box-shadow: inset 0 0 20px #000;
+    transition: all .23s ease;
+    .wrapper {
+      position: relative;
+      left: 10px;width: 95%;
+      }
+    h1 {
+      font: 120px 'Nunito Sans Italic', sans-serif;
+      margin: 0;
+      text-decoration: underline;
+      }
+    }
+  .introduction {
+    color: #fff;
+    width: 50%;
+    width: 100%;
+    margin: 0 auto 25px;
+    float: left;
+    .wrapper {max-width: 1100px; margin: auto; padding: 50px 10px 20px;}
+    p {padding: 10px;}
+    p:first-of-type {
+      padding: 0;
+      text-indent: 30px;
+      font-size: 2.2em;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      }
+    p:last-of-type {text-align: right;}
+    a {color: #44f; text-decoration: underline; @include transition(all .23s ease);}
+    a:hover {color: #88f}
+    }
+  }
+
+@media only screen and (max-width: 1100px) {
+  header .banner .wrapper h1 {font-size: 10vw;}
+  header .banner {background-position: right top;}
+  }
+
+/*****************************************************
+  Main
+*****************************************************/
+
+
+main {
+  min-width: 100%;
+  float: left;
+  background-color: #2c2528;
+  font-weight: bold;
+  section {float: left; max-width: 100%;}
+  h2 {
+    width: 100%;
+    font-size: 6em;
+    margin: 5px 0;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Nunito Sans Black', sans-serif;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    main h2 {font-size: 15.0vw;}
+    }
+
+/*****************************************************
+  Project Works
+*****************************************************/
+
+#projects {
+  article {
+    width: 50%;
+    float: left;
+    img {
+      width: 50%;
+      position: absolute;
+      }
+    .art_contain {
+      position: relative;
+      color: #fff;
+      width: 90%;
+      margin: 0 5%;
+      }
+      h3, p {
+        width: 100%;
+        margin: 0;
+        text-align: right;
+        transition: all .23s ease;
+        float: left;
+        padding-top: 10px;
+        }
+      h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.2vw;
+        }
+      p {font-size: 1.6vw;}
+      h3, p:nth-of-type(1) {text-align: left;}
+      p:nth-of-type(2) {position: absolute; right: 0; bottom: 3%;}
+      &:hover {
+        h3 {text-decoration: underline;}
+        img {z-index: 100;}
+        .art_contain {z-index: 100;}
+        }
+    }
+  }
+
+@media only screen and (max-width: 1100px) {
+  #projects article img {width: 100%;}
+  #projects article h3 {font-size: 4.2vw}
+  #projects article p {font-size: 2.6vw}
+  #projects article {width: 100%;}
+  }
+
+/*****************************************************
+  Illustration Works
+*****************************************************/
+
+#illustrations > div {
+    float: left;
+    width: 16.666%;
+    img {width: 100%; height: 100%}
+    }
+
+.take_son, .dont_matter {
+  h3, p {color: #fff;}
+  h3, p:nth-of-type(1) {text-align: right;}
+  &:hover {h3, p {color: #ff688c}}
+  }
+
+.mage_warrior, .beast_claws {
+  h3, p {color: #01a5e4;}
+  &:hover {h3, p {color: #006289}}
+  }
+
+.scream_bucket, .steamed_crab, .degree_response {
+  h3, p {color: #777;}
+  &:hover {h3, p {color: #444}}
+  }
+
+.missing_dog, .still_dtf, .wuss_club {
+  h3, p {color: #772053;}
+  &:hover {h3, p {color: #da3395}}
+  }
+
+.ash_pikachu {
+  h3, p {color: #25598e;}
+  &:hover {h3, p {color: #6D501E}}
+  }
+
+.humping_zoo {
+  h3, p {color: #7a6c76;}
+  &:hover {h3, p {color: #6D501E}}
+  }
+
+.fan_fiction {
+  h3, p {color: #fff;}
+  &:hover {h3, p {color: #e5acd3}}
+  }
+
+.woman_happy {
+  h3, p {color: #43045A;}
+  &:hover {h3, p {color: #C41AB7}}
+  }
+
+@media only screen and (max-width: 1100px) {
+  #illustrations > div {width: 25%;}
+  }
+
+@media only screen and (max-width: 500px) {
+  #illustrations > div {width: 33.333%;}
+  }
+
+/*****************************************************
+  Footer
+*****************************************************/
+
+footer {
+  min-width: 100%;
+  margin-top: 60px;
+  float: left;
+  background: url(../img/footerbg.png) -1px -1px/cover no-repeat;
+  box-shadow: inset 0 0 20px #000;
+  color: #fff;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px 10% 40px;
+    float: left;
+    background-color: rgba(44, 37, 40, .5)
+    }
+
+  .navigate {
+    float: right;
+    margin-right: 200px;
+    h3 {text-transform: uppercase;}
+    ul {
+      list-style-type: none;
+      margin-left: 25px;
+      font-size: 1.7em;
+      a {transition: all .23s ease; position: relative; left: 0;}
+      a:hover {color: #888; left: 10px;}
+      }
+    }
+  }
+
+.legal {
+  width: 100%;
+  float: left;
+  padding: 5px 10%;
+  margin-bottom: 30px;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  background-color: rgba(50,50,50,.8);
+  text-align: right;
+  }
+
+#gototop {
+  div {
+    position: fixed;
+    z-index: 999;
+    bottom: 40px;
+    right: 40px;
+    width: 80px; height: 80px; border-radius: 40px;
+    background: #4c4c4c;
+    background: -moz-linear-gradient(top, #4c4c4c 0%, #2c2c2c 46%, #4c4c4c 93%, #4c4c4c 97%);
+    background: -webkit-linear-gradient(top, #4c4c4c 0%,#2c2c2c 46%,#4c4c4c 93%,#4c4c4c 97%);
+    background: linear-gradient(to bottom, #4c4c4c 0%,#2c2c2c 46%,#4c4c4c 93%,#4c4c4c 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#4c4c4c',GradientType=0 );
+    @include animation(playGradiant 5s linear infinite);
+    animation-play-state: paused;
+    &:hover {animation-play-state: running}
+    img {width: 80%; margin: 10%;}
+    }
+  }
+
+@-webkit-keyframes playGradiant {
+  0% {background-position: 1px 1px}
+  100% {background-position: 0% 400px}
+  }
+
+@-moz-keyframes playGradiant {
+  0% {background-position: 1px 1px}
+  100% {background-position: 0% 400px}
+  }
+@keyframes playGradiant {
+  0% {background-position: 1px 1px}
+  100% {background-position: 0% 400px}
+  }
+
+@media only screen and (max-width: 1100px) {
+  footer .navigate {margin-right: 50px;}
+  }
