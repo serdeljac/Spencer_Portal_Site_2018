@@ -97,7 +97,8 @@ nav {
     text-align: center;
     padding: 0 10px;
     p {@include transition(all .23s ease);}
-    a {font: bold 1.6em 'Libre Baskerville', serif; color: #bbb;}
+    //a {font: bold 1.6em 'Libre Baskerville', serif; color: #bbb;}
+    a {font: bold 1.6em 'Numito Black', serif; color: #bbb;}
     &:hover a {color: #fff}
     }
   }
@@ -195,7 +196,8 @@ header {
     h1 {
       font: 120px 'Nunito Sans Italic', sans-serif;
       margin: 0;
-      text-decoration: underline;
+      text-decoration: underline; 
+      text-align: center;
       }
     }
   .introduction {
