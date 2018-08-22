@@ -2,7 +2,7 @@
   Imports and generic defaults
 *****************************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,900');
 
 * {
   margin: 0;
@@ -14,9 +14,9 @@ a, a:hover {text-decoration: none; color: #fff;}
 
 body {
   min-width: 100%;
-  background-color: #2c2528;
+  background-color: #000;
   font-family: 'Nunito Sans', sans-serif;
-  color: #000;
+  color: #fff;
   }
 
 /*****************************************************
@@ -38,7 +38,7 @@ body {
   }
 
 /*****************************************************
-  Footer
+  Loading Screen
 *****************************************************/
 
 .pageload {
@@ -48,7 +48,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1100;
-  background: #2c2528;
+  background: #000;
   div {
     margin: 100px auto 0;
     width: 200px;
@@ -87,47 +87,49 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid #fff;
-  background-color: #2c2528;
+  background-color: #000;
   z-index: 998;
+  ul {margin-left: 20px;}
   ul li {
     list-style-type: none;
     float: left;
     text-align: center;
-    padding: 0 10px;
+    padding: 0 20px;
     p {@include transition(all .23s ease);}
     //a {font: bold 1.6em 'Libre Baskerville', serif; color: #bbb;}
-    a {font: bold 1.6em 'Numito Black', serif; color: #bbb;}
+    a {font: bold 1.6em 'Numito Black', serif; color: #bbb; font-weight: 300}
     &:hover a {color: #fff}
     }
+
   }
 
 aside {
   position: fixed;
   z-index: 999;
-  top: 1px;
-  right: 10px;
-  background-color: #2c2528;
+  top: 7px;
+  right: 40px;
+
   div {
-    width: 50px;
-    height: 50px;
-    margin: 10px 10px 0;
+    width: 20px;
+    height: 20px;
+    margin: 10px 15px 0;
     float: left;
     background-image: url(../img/sprite.png);
-    background-size: 300px 100px;
+    background-size: 120px 40px;
     &.facebook {background-position: 0px 0px}
-    &.twitter {background-position: -50px 0px}
-    &.instagram {background-position: -100px 0px}
-    &.tumblr {background-position: -150px 0px}
-    &.youtube {background-position: -200px 0px}
-    &.email {background-position: -250px 0px}
-    &.facebook:hover {background-position: 0px -50px}
-    &.twitter:hover {background-position: -50px -50px}
-    &.instagram:hover {background-position: -100px -50px}
-    &.tumblr:hover {background-position: -150px -50px}
-    &.youtube:hover {background-position: -200px -50px}
-    &.email:hover {background-position: -250px -50px}
+    &.twitter {background-position: -20px 0px}
+    &.instagram {background-position: -40px 0px}
+    &.tumblr {background-position: -60px 0px}
+    &.youtube {background-position: -80px 0px}
+    &.email {background-position: -100px 0px}
+    &.facebook:hover {background-position: 0px -20px}
+    &.twitter:hover {background-position: -20px -20px}
+    &.instagram:hover {background-position: -40px -20px}
+    &.tumblr:hover {background-position: -60px -20px}
+    &.youtube:hover {background-position: -80px -20px}
+    &.email:hover {background-position: -100px -20px}
     }
   }
 
@@ -166,10 +168,6 @@ aside {
   }
 
 
-
-
-
-
 /*****************************************************
   Header
 *****************************************************/
@@ -206,6 +204,7 @@ header {
     width: 100%;
     margin: 0 auto 25px;
     float: left;
+    font-weight: 900;
     .wrapper {max-width: 1100px; margin: auto; padding: 50px 10px 20px;}
     p {padding: 10px;}
     p:first-of-type {
@@ -216,7 +215,7 @@ header {
       border-bottom: 2px solid #fff;
       }
     p:last-of-type {text-align: right;}
-    a {color: #44f; text-decoration: underline; @include transition(all .23s ease);}
+    a {color: #55f; text-decoration: underline; @include transition(all .23s ease);}
     a:hover {color: #88f}
     }
   }
@@ -234,7 +233,7 @@ header {
 main {
   min-width: 100%;
   float: left;
-  background-color: #2c2528;
+  background-color: #000;
   font-weight: bold;
   section {float: left; max-width: 100%;}
   h2 {
@@ -244,6 +243,8 @@ main {
     overflow: hidden;
     text-align: center;
     font-family: 'Nunito Sans Black', sans-serif;
+    font-weight: 900;
+    color: #fff;
     }
   }
 
@@ -257,7 +258,7 @@ main {
 *****************************************************/
 
 #projects {
-  .humping_zoo, .scream_bucket, .woman_happy {h3, p {color: #000}}
+  .humping_zoo, .steamed_crab, .missing_dog, .scream_bucket, .woman_happy {h3, p {color: #000}}
   article {
     width: 50%;
     float: left;
@@ -280,7 +281,7 @@ main {
     h3 {
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 2.2vw;
+      font-size: 2.7vw;
       text-align: center;
       }
     p {
@@ -390,12 +391,12 @@ footer {
   .navigate {
     float: right;
     margin-right: 200px;
-    h3 {text-transform: uppercase;}
+    h3 {text-transform: uppercase; font-weight: 900}
     ul {
       list-style-type: none;
       margin-left: 25px;
       font-size: 1.7em;
-      a {transition: all .23s ease; position: relative; left: 0;}
+      a {transition: all .23s ease; position: relative; left: 0; font-weight: 300;}
       a:hover {color: #888; left: 10px;}
       }
     }
@@ -410,6 +411,7 @@ footer {
   border-bottom: 1px solid #bbb;
   background-color: rgba(50,50,50,.8);
   text-align: right;
+  font-weight: 400;
   }
 
 #gototop {
