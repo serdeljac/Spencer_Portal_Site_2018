@@ -1,3 +1,4 @@
+
 /*****************************************************
   Imports and generic defaults
 *****************************************************/
@@ -41,77 +42,82 @@ body {
   Loading Screen
 *****************************************************/
 
-.pageload {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1100;
-  background: #000;
-  div {
-    margin: 100px auto 0;
-    width: 200px;
-    @include animation(loadThrottle 1.5s linear infinite);
-    img {width: 100%;}
-    }
-  }
-
-@-webkit-keyframes loadThrottle {
-  0% {margin-top: 100px; width: 200px;}
-  30% {margin-top: 50px; width: 300px;}
-  70% {margin-top: 100px; width: 200px;}
-  100% {margin-top: 100px; width: 200px;}
-  }
-
-@-moz-keyframes loadThrottle {
-  0% {margin-top: 100px; width: 200px;}
-  30% {margin-top: 50px; width: 300px;}
-  70% {margin-top: 100px; width: 200px;}
-  100% {margin-top: 100px; width: 200px;}
-  }
-
-@keyframes loadThrottle {
-  0% {margin-top: 100px; width: 200px;}
-  30% {margin-top: 50px; width: 300px;}
-  70% {margin-top: 100px; width: 200px;}
-  100% {margin-top: 100px; width: 200px;}
-  }
+// .pageload {
+//   width: 100%;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 1100;
+//   background: #000;
+//   div {
+//
+//     // @include animation(loadThrottle 1.5s linear infinite);
+//     img {}
+//     }
+//   }
+//
+// @-webkit-keyframes loadThrottle {
+//   0% {margin-top: 100px; width: 200px;}
+//   30% {margin-top: 50px; width: 300px;}
+//   70% {margin-top: 100px; width: 200px;}
+//   100% {margin-top: 100px; width: 200px;}
+//   }
+//
+// @-moz-keyframes loadThrottle {
+//   0% {margin-top: 100px; width: 200px;}
+//   30% {margin-top: 50px; width: 300px;}
+//   70% {margin-top: 100px; width: 200px;}
+//   100% {margin-top: 100px; width: 200px;}
+//   }
+//
+// @keyframes loadThrottle {
+//   0% {margin-top: 100px; width: 200px;}
+//   30% {margin-top: 50px; width: 300px;}
+//   70% {margin-top: 100px; width: 200px;}
+//   100% {margin-top: 100px; width: 200px;}
+//   }
 
 /*****************************************************
   Navigation
 *****************************************************/
 
-nav {
-  min-width: 100%;
+.navigation {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px;
-  border-bottom: 1px solid #fff;
-  background-color: #000;
+  min-width: 100%;
   z-index: 998;
+  background-color: #000;
+  height: 50px;
+  border-bottom: 1px solid #fff;
+  }
+
+nav {
+  padding: 10px;
+  width: 800px;
+  float: left;
   ul {margin-left: 20px;}
   ul li {
     list-style-type: none;
     float: left;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 30px;
     p {@include transition(all .23s ease);}
     //a {font: bold 1.6em 'Libre Baskerville', serif; color: #bbb;}
-    a {font: bold 1.6em 'Numito Black', serif; color: #bbb; font-weight: 300}
+    a {font: bold 1.4em 'Nunito Sans', sans-serif; color: #bbb; font-weight: 200}
     &:hover a {color: #fff}
     }
-
   }
 
 aside {
-  position: fixed;
-  z-index: 999;
-  top: 7px;
-  right: 40px;
-
-  div {
+  float: right;
+  margin-top: 5px;
+  & > div {
+    width: 300px;
+    margin: auto;
+    }
+  div div {
     width: 20px;
     height: 20px;
     margin: 10px 15px 0;
@@ -134,32 +140,34 @@ aside {
   }
 
 @media only screen and (max-width: 1100px) {
+  .navigation {height: 80px;}
   nav ul li {
     padding: 0;
     width: 20%;
     }
+  nav {width: 100%; padding-bottom: 0;}
   aside {
-    width: 60px;
-    top: 100px;
-    right: 0px;
-    div {
-      width: 40px;
-      height: 40px;
-      background-size: 240px 80px;
-      margin: 10px;
-      &.facebook {background-position: 0px 0px}
-      &.twitter {background-position: -40px 0px}
-      &.instagram {background-position: -80px 0px}
-      &.tumblr {background-position: -120px 0px}
-      &.youtube {background-position: -160px 0px}
-      &.email {background-position: -200px 0px}
-      &.facebook:hover {background-position: 0px -40px}
-      &.twitter:hover {background-position: -40px -40px}
-      &.instagram:hover {background-position: -80px -40px}
-      &.tumblr:hover {background-position: -120px -40px}
-      &.youtube:hover {background-position: -160px -40px}
-      &.email:hover {background-position: -200px -40px}
-      }
+    margin-top: 0;
+    width: 100%;
+    // div {
+    //   width: 30px;
+    //   height: 30px;
+    //   background-size: 180px 60px;
+    //   background-image: url(../img/sprite_mobile.png);
+    //   margin: 10px;
+    //   &.facebook {background-position: 0px 0px}
+    //   &.twitter {background-position: -30px 0px}
+    //   &.instagram {background-position: -60px 0px}
+    //   &.tumblr {background-position: -90px 0px}
+    //   &.youtube {background-position: -120px 0px}
+    //   &.email {background-position: -150px 0px}
+    //   &.facebook:hover {background-position: 0px -30px}
+    //   &.twitter:hover {background-position: -30px -30px}
+    //   &.instagram:hover {background-position: -60px -30px}
+    //   &.tumblr:hover {background-position: -90px -30px}
+    //   &.youtube:hover {background-position: -120px -30px}
+    //   &.email:hover {background-position: -150px -30px}
+    //   }
     }
   }
 
@@ -175,27 +183,27 @@ aside {
 header {
   width: 100%;
   float: left;
-  padding-top: 75px;
   color: #fff;
   min-height: 45vw;
   background: url(../img/headerblur.png) top center/cover no-repeat fixed;
   .banner {
-    margin-top: 3%;
+    margin-top: 55px;
     min-width: 100%;
     height: 365px;
     float: left;
     background: url(../img/headerbg.png) center top/cover no-repeat;
-    box-shadow: inset 0 0 20px #000;
+    // box-shadow: inset 0 0 20px #000;
     transition: all .23s ease;
     .wrapper {
       position: relative;
-      left: 10px;width: 95%;
+      left: 10px; width: 95%;
       }
     h1 {
-      font: 120px 'Nunito Sans Italic', sans-serif;
+      font: 120px 'Nunito Sans', sans-serif;
       margin: 0;
-      text-decoration: underline;
-      text-align: center;
+      font-weight: 900;
+      font-style: italic;
+
       }
     }
   .introduction {
@@ -205,14 +213,14 @@ header {
     margin: 0 auto 25px;
     float: left;
     font-weight: 900;
-    .wrapper {max-width: 1100px; margin: auto; padding: 50px 10px 20px;}
-    p {padding: 10px;}
+    .wrapper {max-width: 900px; margin: auto; padding: 50px 10px 20px;}
+    span {font-size: 1.8em;}
+    p {padding: 7px 10px; float: left;}
     p:first-of-type {
       padding: 0;
-      text-indent: 30px;
-      font-size: 2.2em;
-      border-top: 2px solid #fff;
-      border-bottom: 2px solid #fff;
+      font-size: 1.8em;
+      padding-bottom: 20px;
+
       }
     p:last-of-type {text-align: right;}
     a {color: #55f; text-decoration: underline; @include transition(all .23s ease);}
@@ -238,11 +246,11 @@ main {
   section {float: left; max-width: 100%;}
   h2 {
     width: 100%;
-    font-size: 6em;
-    margin: 5px 0;
+    font-size: 3.4em;
+    margin: 20px 0;
     overflow: hidden;
     text-align: center;
-    font-family: 'Nunito Sans Black', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 900;
     color: #fff;
     }
@@ -265,6 +273,7 @@ main {
     img {
       width: 50%;
       position: absolute;
+      opacity: .8;
       }
     .art_contain {
       position: relative;
@@ -289,13 +298,9 @@ main {
       height: 45px;
       padding-top: 10px;
       }
-
-      p:nth-of-type(2) {text-align: right; position: absolute; bottom: 15px;}
-      &:hover {
-        h3 {text-decoration: underline;}
-        img {z-index: 100;}
-        .art_contain {z-index: 100;}
-        }
+    &:hover img {opacity: .5}
+    p:last-of-type {text-align: right; position: absolute; bottom: 15px; width: 100% !important;}
+    &.NSFW .art_contain p {width: 50%; &:nth-of-type(2) {text-align: right;}}
     }
   }
 
@@ -342,7 +347,7 @@ main {
 
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) and (orientation: portrait){
   #projects article img {width: 100%;}
   #projects article h3 {font-size: 4.2vw}
   #projects article p {font-size: 2.6vw}
@@ -376,7 +381,7 @@ footer {
   min-width: 100%;
   margin-top: 60px;
   float: left;
-  background: url(../img/footerbg.png) -1px -1px/cover no-repeat;
+  background: url(../img/footerbg.png) 0px 0px/100% 100% no-repeat;
   box-shadow: inset 0 0 20px #000;
   color: #fff;
 
@@ -397,7 +402,7 @@ footer {
       margin-left: 25px;
       font-size: 1.7em;
       a {transition: all .23s ease; position: relative; left: 0; font-weight: 300;}
-      a:hover {color: #888; left: 10px;}
+      a:hover {color: #888; }
       }
     }
   }
