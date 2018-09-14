@@ -39,44 +39,23 @@ body {
   }
 
 /*****************************************************
-  Loading Screen
+  Navigation
 *****************************************************/
 
-// .pageload {
-//   width: 100%;
-//   height: 100%;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 1100;
-//   background: #000;
-//   div {
-//
-//     // @include animation(loadThrottle 1.5s linear infinite);
-//     img {}
-//     }
-//   }
-//
-// @-webkit-keyframes loadThrottle {
-//   0% {margin-top: 100px; width: 200px;}
-//   30% {margin-top: 50px; width: 300px;}
-//   70% {margin-top: 100px; width: 200px;}
-//   100% {margin-top: 100px; width: 200px;}
-//   }
-//
-// @-moz-keyframes loadThrottle {
-//   0% {margin-top: 100px; width: 200px;}
-//   30% {margin-top: 50px; width: 300px;}
-//   70% {margin-top: 100px; width: 200px;}
-//   100% {margin-top: 100px; width: 200px;}
-//   }
-//
-// @keyframes loadThrottle {
-//   0% {margin-top: 100px; width: 200px;}
-//   30% {margin-top: 50px; width: 300px;}
-//   70% {margin-top: 100px; width: 200px;}
-//   100% {margin-top: 100px; width: 200px;}
-//   }
+.mobilemenu {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vh;
+  height: 100vh;
+  z-index: 995;
+  background: #000;
+  @include transition(all .23s ease);
+  display: block;
+  }
+
+.mobilemenu.close {
+  display: none;
+  }
 
 /*****************************************************
   Navigation
@@ -89,22 +68,33 @@ body {
   min-width: 100%;
   z-index: 998;
   background-color: #000;
-  height: 50px;
-  border-bottom: 1px solid #fff;
+
   }
 
 nav {
   padding: 10px;
-  width: 800px;
   float: left;
-  ul {margin-left: 100px;}
+  margin-left: 100px;
+  @include transition(all .23s ease);
+  li:first-of-type {
+    // display: none;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+
+    img {
+      width: 35px;
+      margin-top: 0px;
+      cursor: pointer;
+      }
+    }
   ul li {
     list-style-type: none;
     float: left;
     text-align: center;
     padding: 0 30px;
+    @include transition(all .23s ease);
     p {@include transition(all .23s ease);}
-    //a {font: bold 1.6em 'Libre Baskerville', serif; color: #bbb;}
     a {font: bold 1.4em 'Nunito Sans', sans-serif; color: #bbb; font-weight: 200}
     &:hover a {color: #fff}
     }
@@ -113,6 +103,8 @@ nav {
 aside {
   float: right;
   margin-top: 5px;
+  margin-right: 70px;
+  @include transition(all .23s ease);
   & > div {
     width: 300px;
     margin: auto;
@@ -139,40 +131,19 @@ aside {
     }
   }
 
-@media only screen and (max-width: 1100px) {
-  .navigation {height: 80px;}
-  nav ul {margin-left: 0px;}
-  nav ul li {
-    padding: 0;
-    width: 20%;
-    }
-  nav {width: 100%; padding-bottom: 0;}
-  aside {
-    margin-top: 0;
-    width: 100%;
-    // div {
-    //   width: 30px;
-    //   height: 30px;
-    //   background-size: 180px 60px;
-    //   background-image: url(../img/sprite_mobile.png);
-    //   margin: 10px;
-    //   &.facebook {background-position: 0px 0px}
-    //   &.twitter {background-position: -30px 0px}
-    //   &.instagram {background-position: -60px 0px}
-    //   &.tumblr {background-position: -90px 0px}
-    //   &.youtube {background-position: -120px 0px}
-    //   &.email {background-position: -150px 0px}
-    //   &.facebook:hover {background-position: 0px -30px}
-    //   &.twitter:hover {background-position: -30px -30px}
-    //   &.instagram:hover {background-position: -60px -30px}
-    //   &.tumblr:hover {background-position: -90px -30px}
-    //   &.youtube:hover {background-position: -120px -30px}
-    //   &.email:hover {background-position: -150px -30px}
-    //   }
-    }
+@media only screen and (max-width: 1400px) {
+  nav {margin-left: 40px;}
+  nav ul li {padding: 0 15px;}
+  aside {margin-right: 30px;}
   }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 980px) {
+
+  nav li:first-of-type {width: 70px;}
+  nav li:not(.hamburger) {display: none;}
+  }
+
+@media only screen and (max-width: 736px) {
   nav ul li a {font-size: 3.0vw;}
   }
 
@@ -193,7 +164,6 @@ header {
     height: 365px;
     float: left;
     background: url(../img/headerbg.png) center top/cover no-repeat;
-    // box-shadow: inset 0 0 20px #000;
     transition: all .23s ease;
     .wrapper {
       position: relative;
@@ -222,7 +192,6 @@ header {
       padding: 0;
       font-size: 1.8em;
       padding-bottom: 20px;
-
       }
     p:last-of-type {text-align: right;}
     a {color: #55f; text-decoration: underline; @include transition(all .23s ease);}
@@ -230,7 +199,7 @@ header {
     }
   }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 980px) {
   header .banner .wrapper h1 {font-size: 10vw;}
   header .banner {background-position: right top;}
   }
@@ -259,7 +228,7 @@ main {
   }
 
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 736px) {
     main h2 {font-size: 15.0vw;}
     }
 
@@ -309,50 +278,7 @@ main {
     }
   }
 
-
-// .take_son, .dont_matter {
-//   h3, p {color: #fff;}
-//   // &:hover {h3, p {color: #ff688c}}
-//   }
-//
-// .mage_warrior, .beast_claws {
-//   h3, p {color: #01a5e4;}
-//   // &:hover {h3, p {color: #006289}}
-//   }
-//
-// .scream_bucket, .steamed_crab, .degree_response {
-//   h3, p {color: #777;}
-//   // &:hover {h3, p {color: #444}}
-//   }
-//
-// .missing_dog, .still_dtf, .wuss_club {
-//   h3, p {color: #772053;}
-//   // &:hover {h3, p {color: #da3395}}
-//   }
-//
-// .ash_pikachu {
-//   h3, p {color: #25598e;}
-//   // &:hover {h3, p {color: #6D501E}}
-//   }
-//
-// .humping_zoo {
-//   h3, p {color: #7a6c76;}
-//   // &:hover {h3, p {color: #6D501E}}
-//   }
-//
-// .fan_fiction {
-//   h3, p {color: #fff;}
-//   // &:hover {h3, p {color: #e5acd3}}
-//   }
-//
-// .woman_happy {
-//   h3, p {color: #43045A;}
-//   // &:hover {h3, p {color: #C41AB7}}
-//   }
-
-
-
-@media only screen and (max-width: 1100px) and (orientation: portrait){
+@media only screen and (max-width: 980px) and (orientation: portrait){
   #projects article img {width: 100%;}
   #projects article h3 {font-size: 4.2vw}
   #projects article p {font-size: 2.6vw}
@@ -370,11 +296,11 @@ main {
     }
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 980px) {
   #illustrations > div {width: 25%;}
   }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 736px) {
   #illustrations > div {width: 33.333%;}
   }
 
@@ -418,9 +344,6 @@ footer {
   float: left;
   padding: 5px 10%;
   margin-bottom: 30px;
-  // border-top: 1px solid #bbb;
-  // border-bottom: 1px solid #bbb;
-  // background-color: rgba(50,50,50,.8);
   text-align: right;
   font-weight: 400;
   }
@@ -433,31 +356,12 @@ footer {
     right: 40px;
     width: 60px; height: 60px; border-radius: 40px;
     background: #4c4c4c;
-    // background: -moz-linear-gradient(top, #4c4c4c 0%, #2c2c2c 46%, #4c4c4c 93%, #4c4c4c 97%);
-    // background: -webkit-linear-gradient(top, #4c4c4c 0%,#2c2c2c 46%,#4c4c4c 93%,#4c4c4c 97%);
-    // background: linear-gradient(to bottom, #4c4c4c 0%,#2c2c2c 46%,#4c4c4c 93%,#4c4c4c 97%);
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#4c4c4c',GradientType=0 );
-    // @include animation(playGradiant 5s linear infinite);
     animation-play-state: paused;
     &:hover {animation-play-state: running}
     img {width: 80%; margin: 10%;}
     }
   }
 
-@-webkit-keyframes playGradiant {
-  0% {background-position: 1px 1px}
-  100% {background-position: 0% 400px}
-  }
-
-@-moz-keyframes playGradiant {
-  0% {background-position: 1px 1px}
-  100% {background-position: 0% 400px}
-  }
-@keyframes playGradiant {
-  0% {background-position: 1px 1px}
-  100% {background-position: 0% 400px}
-  }
-
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 980px) {
   footer .navigate {margin-right: 50px;}
   }

@@ -36,10 +36,13 @@
     <div><img src="favicon.png" alt="Spencer Soares" /></div>
   </div>
 
+  <div class="mobilemenu close">
+  </div>
+
   <div class="navigation">
     <nav>
       <ul id="links" class="navigation_links">
-        <li class="hamburger"></li>
+        <li class="hamburger"><img src="img/hamburger.png" alt="menu" /></li>
         <li><a href="#toppage"><p>Home</p></a></li>
         <li><a href="#projects"><p>Work</p></a></li>
         <li><a href="#illustrations"><p>Illustrations</p></a></li>
@@ -88,7 +91,6 @@
   		</div>
   	</div>
   </header>
-
   <main>
     <section id="projects">
       <h2>Work</h2>
@@ -311,10 +313,8 @@
         <div>
           <img src="illus/alone.jpg" alt="mario.jpg" />
         </div>
-
     </section>
   </main>
-
   <footer>
     <div class="wrapper">
       <div class="navigate">
@@ -359,6 +359,11 @@
         headertitle();
       });
 
+      $('.mobilemenu').on('click', function() {
+        if ($(this).hasClass('close')) {
+          $(this).removeClass('close')
+          }
+      })
 
 
       function adjustArticles() {
