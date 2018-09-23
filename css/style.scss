@@ -1,3 +1,7 @@
+// @media maxwidth 1200 = screens smaller than 1200px;
+// @media minwidth 992 maxwidth 1200 = small laptops;
+// @media minwidth 768 maxwidth 992 = Tablets;
+// @media maxwidth 768 = Tiny screens;
 
 /*****************************************************
   Imports and generic defaults
@@ -67,7 +71,7 @@ body {
   left: 0;
   min-width: 100%;
   z-index: 998;
-  background-color: #000;
+
 
   }
 
@@ -77,7 +81,6 @@ nav {
   margin-left: 100px;
   @include transition(all .23s ease);
   li:first-of-type {
-    // display: none;
     width: 0;
     padding: 0;
     overflow: hidden;
@@ -131,19 +134,19 @@ aside {
     }
   }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
   nav {margin-left: 40px;}
   nav ul li {padding: 0 15px;}
   aside {margin-right: 30px;}
   }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 992px) {
 
   nav li:first-of-type {width: 70px;}
   nav li:not(.hamburger) {display: none;}
   }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 768px) {
   nav ul li a {font-size: 3.0vw;}
   }
 
@@ -172,7 +175,8 @@ header {
     h1 {
       font: 90px 'Nunito Sans', sans-serif;
       margin: 0;
-      margin-left: 2%;
+      margin-left: 1%;
+      margin-top: -20px;
       font-weight: 900;
       font-style: italic;
       line-height: 75px;
@@ -185,21 +189,22 @@ header {
     margin: 0 auto 25px;
     float: left;
     font-weight: 900;
-    .wrapper {max-width: 900px; margin: auto; padding: 50px 10px 20px;}
+    .wrapper {max-width: 700px; margin: auto; padding: 50px 10px 20px;}
     span {font-size: 1.8em;}
-    p {padding: 7px 10px; float: left;}
+    p {padding: 7px 10px; width: 100%;float: left; text-align: left;}
     p:first-of-type {
       padding: 0;
       font-size: 1.8em;
       padding-bottom: 20px;
+      line-height: 50px;
+      text-align: center;
       }
-    p:last-of-type {text-align: right;}
     a {color: #55f; text-decoration: underline; @include transition(all .23s ease);}
     a:hover {color: #88f}
     }
   }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 992px) {
   header .banner .wrapper h1 {font-size: 10vw;}
   header .banner {background-position: right top;}
   }
@@ -228,7 +233,7 @@ main {
   }
 
 
-  @media only screen and (max-width: 736px) {
+  @media only screen and (max-width: 768px) {
     main h2 {font-size: 15.0vw;}
     }
 
@@ -239,7 +244,7 @@ main {
 #projects {
   .humping_zoo, .steamed_crab, .missing_dog, .scream_bucket, .woman_happy {h3, p {color: #000}}
   article {
-    width: 50%;
+    width: 49.88%;
     float: left;
     img {
       width: 50%;
@@ -271,14 +276,14 @@ main {
       }
     &:hover
       {
-      h3 {transform: skew(-2deg, -2deg); text-decoration: underline;}
+      h3 { text-decoration: underline;}
       }
     p:last-of-type {text-align: right; position: absolute; bottom: 15px; width: 100% !important;}
     &.NSFW .art_contain p {width: 50%; &:nth-of-type(2) {text-align: right;}}
     }
   }
 
-@media only screen and (max-width: 980px) and (orientation: portrait){
+@media only screen and (max-width: 992px) and (orientation: portrait){
   #projects article img {width: 100%;}
   #projects article h3 {font-size: 4.2vw}
   #projects article p {font-size: 2.6vw}
@@ -296,18 +301,19 @@ main {
     }
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 992px) {
   #illustrations > div {width: 25%;}
   }
 
-@media only screen and (max-width: 736px) {
-  #illustrations > div {width: 33.333%;}
+@media only screen and (max-width: 768px) {
+  #illustrations > div {width: 32.60%;}
+  #illustrations {padding: 1%;}
   }
 
 /*****************************************************
   Footer
 *****************************************************/
-
+//Place copyright at bottom over footer image
 footer {
   min-width: 100%;
   margin-top: 60px;
@@ -327,7 +333,7 @@ footer {
 
   .navigate {
     float: right;
-    margin-right: 200px;
+    margin-right: 50px;
     h3 {text-transform: uppercase; font-weight: 900}
     ul {
       list-style-type: none;
@@ -346,6 +352,8 @@ footer {
   margin-bottom: 30px;
   text-align: right;
   font-weight: 400;
+  position: absolute;
+  bottom: 0;
   }
 
 #gototop {
@@ -362,6 +370,6 @@ footer {
     }
   }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 992px) {
   footer .navigate {margin-right: 50px;}
   }
