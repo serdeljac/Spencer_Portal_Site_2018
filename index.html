@@ -357,18 +357,18 @@
 
       adjustArticles();
       headertitle();
-
+footerSet()
       $(window).resize(function() {
         adjustArticles();
         headertitle();
+footerSet()
       });
-
-
 
       $('nav .hamburger, .mobileOpen li').on('click', function() {
         $('.navigation').toggleClass('mobileOpen');
       })
-$('.navigation').removeClass('mobileOpen');
+
+      $('.navigation').removeClass('mobileOpen');
 
 
       function adjustArticles() {
@@ -383,6 +383,14 @@ $('.navigation').removeClass('mobileOpen');
         var imgH = $('header h1:first-of-type').height();
         $('header .wrapper').css('top', 365 - imgH);
       }
+
+      function footerSet() {
+        var winW = $(window).width();
+        $('footer').height(winW * .42);
+      }
+
+
+
     });
   </script>
 
