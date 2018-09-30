@@ -1,0 +1,219 @@
+{
+  "work": [
+    
+    
+  {
+    "title": "FAN FICTION WRITER'S<br /> ROOM",
+    "smallPanel": false,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "podcast",
+    "className": "fan_fiction",
+    "imgName": "ffwr.jpg",
+    "year": "2018",
+    "link": "www.google.ca"
+  },
+  
+  
+  {
+    "title": "MBMBAM ANIMATED: <br />HUMPING AT THE ZOO",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": true,
+    "catagory": "film",
+    "className": "humping_zoo",
+    "imgName": "mbmbam.jpg",
+    "year": "2018",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "I DON'T MATTER",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "dont_matter",
+    "imgName": "idontmatter.jpg",
+    "year": "2017",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "WUSS CLUB",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "wuss_club",
+    "imgName": "wussclub.jpg",
+    "year": "2018",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "STEAMED CRAB",
+    "smallPanel": true,
+    "nsfw": true,
+    "darkText": true,
+    "catagory": "comic",
+    "className": "steamed_crab",
+    "imgName": "steamedcrab.jpg",
+    "year": "2016",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "AND THE WOMAN WAS<br /> HAPPY",
+    "smallPanel": false,
+    "nsfw": false,
+    "darkText": true,
+    "catagory": "comic",
+    "className": "woman_happy",
+    "imgName": "and_the_woman_was_happy.jpg",
+    "year": "2017",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "BUT I’M STILL DTF",
+    "smallPanel": false,
+    "nsfw": true,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "still_dtf",
+    "imgName": "DTF.jpg",
+    "year": "2016",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "NOT ALL BEASTS ARE BORN<br /> WITH CLAWS",
+    "smallPanel": false,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "beast_claws",
+    "imgName": "BEAST.jpg",
+    "year": "2016",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "DEGREE OF RESPONSIBILITY",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "degree_response",
+    "imgName": "DEGREE.jpg",
+    "year": "2016",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "Missing Dog",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": true,
+    "catagory": "comic",
+    "className": "missing_dog",
+    "imgName": "missingdog.jpg",
+    "year": "2015",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "Take your son <br />to work day",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "film",
+    "className": "take_son",
+    "imgName": "TAKE_SON.jpg",
+    "year": "2014",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "Warrior <br />and Mage",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "mage_warrior",
+    "imgName": "MAGE.jpg",
+    "year": "2014",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "ASH AND PIKACHU:<br /> FAREWELL",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "ash_pikachu",
+    "imgName": "ash.jpg",
+    "year": "2013",
+    "link": " "
+  },
+  
+  
+  {
+    "title": "Scream Bucket",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": true,
+    "catagory": "comic",
+    "className": "scream_bucket",
+    "imgName": "screambucket.jpg",
+    "year": "2011-2014",
+    "link": " "
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ]
+}

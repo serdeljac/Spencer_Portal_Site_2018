@@ -81,7 +81,6 @@ nav {
     img {
       width: 35px;
       margin-top: 0px;
-
       }
     }
   ul li {
@@ -90,7 +89,6 @@ nav {
     text-align: center;
     padding: 0 30px;
     @include transition(all .23s ease);
-    p {@include transition(all .23s ease);}
     a {font: bold 1.4em 'Nunito Sans', sans-serif; color: #bbb; font-weight: 200}
     &:hover a {color: #fff}
     }
@@ -169,10 +167,6 @@ aside {
 @media only screen and (max-width: 992px) and (orientation: landscape) {
   .navigation nav li {margin: 5px 0;}
   .navigation aside div div {margin: 10px;}
-  }
-
-@media only screen and (max-width: 768px) {
-
   }
 
 
@@ -267,26 +261,23 @@ main {
 *****************************************************/
 
 #projects {
-  .humping_zoo, .steamed_crab, .missing_dog, .scream_bucket, .woman_happy {h3, p {color: #000}}
-  article {
-    width: 50%;
+  width: 100%;
 
-    float: left;
-    img {
+  .dtxt {h3, p {color: #000}}
+
+  article {
+
+
+    .art_wrapper {
       width: 50%;
-      position: absolute;
-      opacity: .9;
-      }
-    .art_contain {
-      position: relative;
-      color: #fff;
-      width: 90%;
-      margin: 0 5%;
+      background-size: cover;
+      float: left;
+      padding: 0 5%;
       }
     h3, p {
       width: 100%;
+      color: #fff;
       margin: 0;
-      transition: all .23s ease;
       float: left;
       }
     h3 {
@@ -294,27 +285,32 @@ main {
       font-weight: bold;
       font-size: 2.7vw;
       text-align: center;
+      height: 80%;
+      padding-top: 20%;
       }
+    &.large h3 {padding-top: 40%;}
     p {
       font-size: 1.6vw;
       height: 45px;
-      padding-top: 10px;
+      width: 50%;
+      height: 10%;
+padding-top: 20px;
       }
-    &:hover
-      {
-      h3 { text-decoration: underline;}
-      }
-    p:last-of-type {text-align: right; position: absolute; bottom: 15px; width: 100% !important;}
-    &.NSFW .art_contain p {width: 50%; &:nth-of-type(2) {text-align: right;}}
+    p {}
+    p:last-of-type {width: 100%; padding: 0;text-align: right;}
+    &:hover h3 {text-decoration: underline;}
+    &.NSFW .art_wrapper p:nth-of-type(2) {text-align: right;}
     }
   }
 
-@media only screen and (max-width: 992px) and (orientation: portrait){
-  #projects article img {width: 100%;}
-  #projects article h3 {font-size: 4.2vw}
-  #projects article p {font-size: 2.6vw}
-  #projects article {width: 100%;}
+@media only screen and (max-width: 768px) {
+  #projects article {
+    .art_wrapper {width: 100%;}
+    h3 {font-size: 5.2vw}
+    p {font-size: 3.6vw}
+    }
   }
+
 
 /*****************************************************
   Illustration Works
