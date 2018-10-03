@@ -1,8 +1,3 @@
-// @media maxwidth 1200 = screens smaller than 1200px;
-// @media minwidth 992 maxwidth 1200 = small laptops;
-// @media minwidth 768 maxwidth 992 = Tablets;
-// @media maxwidth 768 = Tiny screens;
-
 /*****************************************************
   Imports and generic defaults
 *****************************************************/
@@ -19,6 +14,7 @@ a, a:hover {text-decoration: none; color: #fff;}
 
 body {
   min-width: 100%;
+  max-width: 2000px;
   background-color: #000;
   font-family: 'Nunito Sans', sans-serif;
   color: #fff;
@@ -55,34 +51,12 @@ body {
   overflow: hidden;
   background-color: #000;
   @include transition(all .23s ease);
-  &.mobileOpen {
-    min-height: 100vh;
-    background-color: #000;
-    nav li:not(.hamburger), aside {opacity: 1;}
-    nav li:first-of-type {
-      text-align: left;
-        .openImg {display: none;}
-        .closeImg {display: block;}
-      }
-    }
   }
 
 nav {
   padding: 10px;
   float: left;
   margin-left: 100px;
-  li:first-of-type {
-    display: none;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    z-index: 999;
-    cursor: pointer;
-    img {
-      width: 35px;
-      margin-top: 0px;
-      }
-    }
   ul li {
     list-style-type: none;
     float: left;
@@ -132,41 +106,12 @@ aside {
 
 @media only screen and (max-width: 992px) {
   .navigation {
-    width: 250px;
-    min-height: 55px;
-    height: 55px;
     background-color: transparent;
-    nav li:not(.hamburger), aside {opacity: 0;}
-    nav {
-      ul {width: 100%; }
-      li {
-        float: none;
-        text-align: left;
-        padding: 0 5px;
-        margin: 50px 0;
-        &:first-of-type {
-          margin: 0;
-          padding: 0;
-          width: 35px;
-          display: block;
-          .openImg {display: block;}
-          .closeImg {display: none;}
-          }
-        }
-      }
-    aside {
-      float: none;
-      margin: 0;
-      & > div {width: 150px;}
-      & div div {margin: 15px;}
-      }
+    nav {float: right;}
+    nav ul li {display: none;}
+    nav ul li:nth-of-type(1n+4) {display: block;}
+    aside {display: none;}
     }
-  nav li:first-of-type {width: 70px;}
-  }
-
-@media only screen and (max-width: 992px) and (orientation: landscape) {
-  .navigation nav li {margin: 5px 0;}
-  .navigation aside div div {margin: 10px;}
   }
 
 
@@ -262,17 +207,14 @@ main {
 
 #projects {
   width: 100%;
-
   .dtxt {h3, p {color: #000}}
 
   article {
-
-
     .art_wrapper {
       width: 50%;
       background-size: cover;
       float: left;
-      padding: 0 5%;
+      padding: 0px 3%;
       }
     h3, p {
       width: 100%;
@@ -285,19 +227,22 @@ main {
       font-weight: bold;
       font-size: 2.7vw;
       text-align: center;
-      height: 80%;
-      padding-top: 20%;
+      height: 45%;
       }
-    &.large h3 {padding-top: 40%;}
+    &.large h3 {height: 55%;}
     p {
       font-size: 1.6vw;
-      height: 45px;
+      height: 34%;
       width: 50%;
-      height: 10%;
-padding-top: 20px;
+      margin-top: 3%;
       }
-    p {}
-    p:last-of-type {width: 100%; padding: 0;text-align: right;}
+    p:last-of-type {
+      width: 100%;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      height: auto;
+      }
     &:hover h3 {text-decoration: underline;}
     &.NSFW .art_wrapper p:nth-of-type(2) {text-align: right;}
     }
@@ -362,10 +307,9 @@ footer {
       font-size: 1.7em;
       a {transition: all .23s ease; position: relative; left: 0; font-weight: 300;}
       li {
-        border-radius: 10px;
         background-color: rgba(0,0,0,.4);
-        padding: 4px 6px;
-        margin-bottom: 6px;
+        text-align: right;
+        padding: 0 5px;
         }
       a:hover {color: #888; }
       }
@@ -375,13 +319,10 @@ footer {
 .legal {width: 100%; float: left;}
 .legal p {
   font-weight: 400;
-  text-align: center;
-  margin-top: -50px;
-  height: 50px;
-  padding-top: 10px;
+  padding: 10px;
   width: 100%;
   z-index: 100;
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: rgba(0,0,0,.4);
   }
 

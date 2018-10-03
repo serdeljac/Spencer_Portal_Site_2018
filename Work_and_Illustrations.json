@@ -11,7 +11,7 @@
     "className": "fan_fiction",
     "imgName": "ffwr.jpg",
     "year": "2018",
-    "link": "www.google.ca"
+    "link": " "
   },
   
   
@@ -203,17 +203,101 @@
   
   
   
+  ],
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ]
+  "illust": [
+    {
+      "imgName": "ffwr-illust.jpg",
+      "altName": "FFWR"
+    },
+    
+    
+    {
+      "imgName": "poke.jpg",
+      "altName": "Poke"
+    },
+    
+    
+    {
+      "imgName": "pig.jpg",
+      "altName": "Pig"
+    },
+    
+    
+    {
+      "imgName": "christmas.jpg",
+      "altName": "Christmas"
+    },
+    
+    
+    {
+      "imgName": "digimon.jpg",
+      "altName": "Digimon"
+    },
+    
+    
+    {
+      "imgName": "ramen.jpg",
+      "altName": "Ramen"
+    },
+    
+    
+    {
+      "imgName": "anime.jpg",
+      "altName": "Anime"
+    },
+    
+    
+    {
+      "imgName": "memories.jpg",
+      "altName": "Memories"
+    },
+    
+    
+    {
+      "imgName": "mario.jpg",
+      "altName": "Mario"
+    },
+    
+    
+    {
+      "imgName": "alone.jpg",
+      "altName": "Alone"
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ]
 }

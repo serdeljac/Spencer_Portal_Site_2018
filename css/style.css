@@ -1,224 +1,194 @@
 /***************************************************** Imports and generic defaults
 *****************************************************/
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,900");
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\000037}}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000313}}
 a, a:hover { text-decoration: none; color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000320}}
-body { min-width: 100%; background-color: #000; font-family: 'Nunito Sans', sans-serif; color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000315}}
+body { min-width: 100%; max-width: 2000px; background-color: #000; font-family: 'Nunito Sans', sans-serif; color: #fff; }
 
 /***************************************************** SASS Mixins
 *****************************************************/
 /***************************************************** Navigation
 *****************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000345}}
 .navigation { position: fixed; top: 0; left: 0; width: 100%; z-index: 998; overflow: hidden; background-color: #000; -webkit-transition: all 0.23s ease; -moz-transition: all 0.23s ease; -o-transition: all 0.23s ease; transition: all 0.23s ease; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000358}}
-.navigation.mobileOpen { min-height: 100vh; background-color: #000; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000361}}
-.navigation.mobileOpen nav li:not(.hamburger), .navigation.mobileOpen aside { opacity: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000362}}
-.navigation.mobileOpen nav li:first-of-type { text-align: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000364}}
-.navigation.mobileOpen nav li:first-of-type .openImg { display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000365}}
-.navigation.mobileOpen nav li:first-of-type .closeImg { display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000356}}
 nav { padding: 10px; float: left; margin-left: 100px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000374}}
-nav li:first-of-type { display: none; padding: 0; overflow: hidden; position: relative; z-index: 999; cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000381}}
-nav li:first-of-type img { width: 35px; margin-top: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000360}}
 nav ul li { list-style-type: none; float: left; text-align: center; padding: 0 30px; -webkit-transition: all 0.23s ease; -moz-transition: all 0.23s ease; -o-transition: all 0.23s ease; transition: all 0.23s ease; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000366}}
 nav ul li a { font: bold 1.4em 'Nunito Sans', sans-serif; color: #bbb; font-weight: 200; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000367}}
 nav ul li:hover a { color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000371}}
 aside { float: right; margin-top: 5px; margin-right: 70px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000375}}
 aside > div { width: 300px; margin: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000379}}
 aside div div { width: 20px; height: 20px; margin: 10px 15px 0; float: left; background-image: url(../img/sprite.png); background-size: 120px 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000386}}
 aside div div.facebook { background-position: 0px 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000387}}
 aside div div.twitter { background-position: -20px 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000388}}
 aside div div.instagram { background-position: -40px 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000389}}
 aside div div.tumblr { background-position: -60px 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000390}}
 aside div div.youtube { background-position: -80px 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000391}}
 aside div div.email { background-position: -100px 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000392}}
 aside div div.facebook:hover { background-position: 0px -20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000393}}
 aside div div.twitter:hover { background-position: -20px -20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000394}}
 aside div div.instagram:hover { background-position: -40px -20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000395}}
 aside div div.tumblr:hover { background-position: -60px -20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000396}}
 aside div div.youtube:hover { background-position: -80px -20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\0000397}}
 aside div div.email:hover { background-position: -100px -20px; }
 
-@media only screen and (max-width: 1200px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003128}}
+@media only screen and (max-width: 1200px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003102}}
   nav { margin-left: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003103}}
   nav ul li { padding: 0 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003104}}
   aside { margin-right: 30px; } }
-@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003134}}
-  .navigation { width: 250px; min-height: 55px; height: 55px; background-color: transparent; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003139}}
-  .navigation nav li:not(.hamburger), .navigation aside { opacity: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003141}}
-  .navigation nav ul { width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003142}}
-  .navigation nav li { float: none; text-align: left; padding: 0 5px; margin: 50px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003147}}
-  .navigation nav li:first-of-type { margin: 0; padding: 0; width: 35px; display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003152}}
-  .navigation nav li:first-of-type .openImg { display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003153}}
-  .navigation nav li:first-of-type .closeImg { display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003157}}
-  .navigation aside { float: none; margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003160}}
-  .navigation aside > div { width: 150px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003161}}
-  .navigation aside div div { margin: 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003164}}
-  nav li:first-of-type { width: 70px; } }
-@media only screen and (max-width: 992px) and (orientation: landscape) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003168}}
-  .navigation nav li { margin: 5px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003169}}
-  .navigation aside div div { margin: 10px; } }
+@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003108}}
+  .navigation { background-color: transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003110}}
+  .navigation nav { float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003111}}
+  .navigation nav ul li { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003112}}
+  .navigation nav ul li:nth-of-type(1n+4) { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003113}}
+  .navigation aside { display: none; } }
 /***************************************************** Header
 *****************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003122}}
 header { width: 100%; float: left; color: #fff; min-height: 45vw; background: url(../img/headerblur.png) top center/cover no-repeat fixed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003128}}
 header .banner { margin-top: 55px; min-width: 100%; height: 365px; float: left; background: url(../img/headerbg.png) center top/cover no-repeat; transition: all .23s ease; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003135}}
 header .banner .wrapper { position: relative; left: 10px; width: 95%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003139}}
 header .banner h1 { font: 90px 'Nunito Sans', sans-serif; margin: 0; margin-left: 1%; margin-top: -20px; font-weight: 900; font-style: italic; line-height: 75px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003149}}
 header .introduction { color: #fff; width: 50%; width: 100%; margin: 0 auto 25px; float: left; font-weight: 900; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003156}}
 header .introduction .wrapper { max-width: 700px; margin: auto; padding: 50px 10px 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003157}}
 header .introduction span { font-size: 1.8em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003158}}
 header .introduction p { padding: 7px 10px; width: 100%; float: left; text-align: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003159}}
 header .introduction p:first-of-type { padding: 0; font-size: 1.8em; padding-bottom: 20px; line-height: 50px; text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003166}}
 header .introduction a { color: #55f; text-decoration: underline; -webkit-transition: all 0.23s ease; -moz-transition: all 0.23s ease; -o-transition: all 0.23s ease; transition: all 0.23s ease; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003167}}
 header .introduction a:hover { color: #88f; }
 
-@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003227}}
+@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003172}}
   header .banner .wrapper h1 { font-size: 10vw; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003173}}
   header .banner { background-position: right top; } }
 /***************************************************** Main
 *****************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003181}}
 main { min-width: 100%; float: left; background-color: #000; font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003186}}
 main section { float: left; max-width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003187}}
 main h2 { width: 100%; font-size: 3.4em; margin: 25px 0; overflow: hidden; text-align: center; font-family: 'Nunito Sans', sans-serif; font-weight: 900; color: #fff; }
 
-@media only screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003256}}
+@media only screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003201}}
   main h2 { font-size: 15.0vw; } }
 /***************************************************** Project Works
 *****************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003208}}
 #projects { width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003210}}
 #projects .dtxt h3, #projects .dtxt p { color: #000; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003271}}
-#projects article .art_wrapper { width: 50%; background-size: cover; float: left; padding: 0 5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003213}}
+#projects article .art_wrapper { width: 50%; background-size: cover; float: left; padding: 0px 3%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003219}}
 #projects article h3, #projects article p { width: 100%; color: #fff; margin: 0; float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003283}}
-#projects article h3 { text-transform: uppercase; font-weight: bold; font-size: 2.7vw; text-align: center; height: 80%; padding-top: 20%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003291}}
-#projects article.large h3 { padding-top: 40%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003292}}
-#projects article p { font-size: 1.6vw; height: 45px; width: 50%; height: 10%; padding-top: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003300}}
-#projects article p:last-of-type { width: 100%; padding: 0; text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003225}}
+#projects article h3 { text-transform: uppercase; font-weight: bold; font-size: 2.7vw; text-align: center; height: 45%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003232}}
+#projects article.large h3 { height: 55%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003233}}
+#projects article p { font-size: 1.6vw; height: 34%; width: 50%; margin-top: 3%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003239}}
+#projects article p:last-of-type { width: 100%; padding: 0; text-align: right; margin: 0; height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003246}}
 #projects article:hover h3 { text-decoration: underline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003302}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003247}}
 #projects article.NSFW .art_wrapper p:nth-of-type(2) { text-align: right; }
 
-@media only screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003308}}
+@media only screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003253}}
   #projects article .art_wrapper { width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003254}}
   #projects article h3 { font-size: 5.2vw; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003255}}
   #projects article p { font-size: 3.6vw; } }
 /***************************************************** Illustration Works
 *****************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003264}}
 #illustrations { width: 98%; margin: 0 1%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003269}}
 #illustrations > div { float: left; width: 16.666%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003272}}
 #illustrations > div img { width: 100%; height: 100%; }
 
-@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003332}}
+@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003277}}
   #illustrations > div { width: 25%; } }
-@media only screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003336}}
+@media only screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003281}}
   #illustrations > div { width: 33.333%; } }
 /***************************************************** Footer
 *****************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003287}}
 footer { min-width: 100%; margin-top: 60px; float: left; min-height: 380px; background: url(../img/footerbg.png) center/100% 100% no-repeat; box-shadow: inset 0 0 20px #000; color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003298}}
 footer .navigate { float: left; margin: 50px 10%; width: 80%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003302}}
 footer .navigate h3 { text-transform: uppercase; font-weight: 900; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003303}}
 footer .navigate ul { list-style-type: none; margin-left: 25px; float: right; font-size: 1.7em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003308}}
 footer .navigate ul a { transition: all .23s ease; position: relative; left: 0; font-weight: 300; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003364}}
-footer .navigate ul li { border-radius: 10px; background-color: rgba(0, 0, 0, 0.4); padding: 4px 6px; margin-bottom: 6px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003309}}
+footer .navigate ul li { background-color: rgba(0, 0, 0, 0.4); text-align: right; padding: 0 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003314}}
 footer .navigate ul a:hover { color: #888; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003319}}
 .legal { width: 100%; float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003376}}
-.legal p { font-weight: 400; text-align: center; margin-top: -50px; height: 50px; padding-top: 10px; width: 100%; z-index: 100; font-size: 1.2em; background-color: rgba(0, 0, 0, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003320}}
+.legal p { font-weight: 400; padding: 10px; width: 100%; z-index: 100; font-size: 1em; background-color: rgba(0, 0, 0, 0.4); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003330}}
 #gototop div { position: fixed; z-index: 999; bottom: 40px; right: 40px; width: 60px; height: 60px; border-radius: 40px; background: #4c4c4c; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003337}}
 #gototop div img { width: 80%; margin: 10%; }
 
-@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003401}}
+@media only screen and (max-width: 992px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003342}}
   #gototop div { right: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003343}}
   footer .navigate { margin-right: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003344}}
   footer { background-position: 45% 0%; background-size: 993px 417px; } }
 
 /*# sourceMappingURL=style.css.map */

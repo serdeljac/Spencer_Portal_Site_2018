@@ -34,13 +34,9 @@
     <div><img src="favicon.png" alt="Spencer Soares" /></div>
   </div>
 
-  <div class="navigation mobileOpen">
+  <div class="navigation">
     <nav>
       <ul id="links" class="navigation_links">
-        <li class="hamburger">
-          <img class="openImg" src="img/hamburger.png" alt="Menu" />
-          <img class="closeImg" src="img/close.png" alt="Close" />
-        </li>
         <li><a href="#toppage">Home</a></li>
         <li><a href="#projects">Work</a></li>
         <li><a href="#illustrations">Illustrations</a></li>
@@ -98,36 +94,6 @@
 
     <section id="illustrations">
       <h2>Illustrations</h2>
-  			<div>
-  				<img src="illus/ffwr-illust.jpg" alt="ffwr-illust.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/poke.jpg" alt="poke.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/pig.jpg" alt="pig.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/christmas.jpg" alt="christmas.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/digimon.jpg" alt="digimon.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/ramen.jpg" alt="ramen.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/anime.jpg" alt="anime.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/memories.jpg" alt="memories.jpg" />
-  			</div>
-  			<div>
-  				<img src="illus/mario.jpg" alt="mario.jpg" />
-  			</div>
-        <div>
-          <img src="illus/alone.jpg" alt="mario.jpg" />
-        </div>
     </section>
   </main>
 
@@ -144,7 +110,7 @@
   </footer>
 
   <div class="legal">
-    <p>Copyrights &copy; Stjepan Erdeljac 2018</p>
+    <p>&copy; 2018 Stjepan Erdeljac</p>
   </div>
 
   <a href="#toppage" id="gototop">
@@ -167,47 +133,56 @@
         var myObj = JSON.parse(this.responseText);
         for (x in myObj.work) {
           var article = myObj.work[x];
-          console.log(article);
           appendArticleData(article);
+          }
+        for (x in myObj.illust) {
+          var illustrations = myObj.illust[x];
+          appendIllustrationData(illustrations);
           }
         }
       };
-      xmlhttp.open("GET", "json_work.json", true);
+      xmlhttp.open("GET", "Work_and_Illustrations.json", true);
       xmlhttp.send();
 
       function appendArticleData(art) {
-      var title = art.title;
-      var panelSize = '';
-      var nsfw = '';
-      var darkText = '';
-      var catagory = art.catagory;
-      var className = art.className;
-      var img = art.imgName;
-      var year = art.year;
-      var link = art.link;
+        var title = art.title,
+        panelSize = '',
+        nsfw = '',
+        darkText = '',
+        catagory = art.catagory,
+        className = art.className,
+        img = art.imgName,
+        year = art.year,
+        link = art.link;
 
-      if (art.smallPanel == false) {
-        panelSize = " large";
-      }
-
-      if (art.darkText == true) {
-        darkText = " dtxt";
-      }
-
-      if (art.nsfw == true) {
-        nsfw = "NSFW";
-      }
-
-      $('#projects').append('<article class="'+className+darkText+panelSize+
-        '"><a href="'+link+
-        '" target="_blank"><div class="art_wrapper" style="background-image: url(proj/'+img+
-        '"><p>'+year+
-        '</p><p>'+nsfw+
-        '</p><h3>'+title+
-        '</h3><p>'+catagory+
-        '</p></div></a></article>');
+        if (art.smallPanel == false) {
+          panelSize = " large";
+        }
+        if (art.darkText == true) {
+          darkText = " dtxt";
+        }
+        if (art.nsfw == true) {
+          nsfw = "NSFW";
         }
 
+        $('#projects').append('<article class="'+className+darkText+panelSize+
+          '"><a href="'+link+
+          '" target="_blank"><div class="art_wrapper" style="background-image: url(proj/'+img+
+          '"><p>'+year+
+          '</p><p>'+nsfw+
+          '</p><h3>'+title+
+          '</h3><p>'+catagory+
+          '</p></div></a></article>');
+        }
+
+
+        function appendIllustrationData(illus) {
+          var imgName = illus.imgName,
+          altName = illus.altName;
+
+          $('#illustrations').append('<div><img src="illus/'+imgName+
+          '" alt="'+altName+'" /></div>');
+        }
   </script>
   <script>
     $(window).ready(function() {
@@ -222,18 +197,10 @@
         getHeight();
       });
 
-      $('nav .hamburger, .mobileOpen li').on('click', function() {
-        $('.navigation').toggleClass('mobileOpen');
-      })
-
-      $('.navigation').removeClass('mobileOpen');
-
       function headertitle() {
         var imgH = $('header h1:first-of-type').height();
         $('header .wrapper').css('top', 365 - imgH);
       }
-
-
 
       function getHeight() {
         var winW = $(window).width();

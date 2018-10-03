@@ -1,0 +1,25 @@
+--------------------------------------------
+	Work section
+--------------------------------------------
+  
+  {
+    "title": "",				-Title to be displayed in middle of image
+    "smallPanel": true,			-TRUE: Use small panel, 						FALSE: Use large panel
+    "nsfw": false,				-TRUE: Add "NSFW" text to top right, 			FALSE: No text
+    "darkText": false,			-TRUE: Use black text color, 					FALSE: Use white text color
+    "catagory": "",				-Display type of work
+    "className": "",			-Unique identifier (can be blank, used for debugging purposes)
+    "imgName": "",				-Image name with extension (must be placed in "proj" folder)
+    "year": "",					-Display year of work
+    "link": " "					-Hyperlink to full project work
+  }
+  
+  
+--------------------------------------------
+	Illustrations section
+--------------------------------------------
+  
+  {
+    "imgName": "",				-Image name with extension (must be placed in "illus" folder)
+    "altName": ""				-Name if image not found (should be added)
+  }
