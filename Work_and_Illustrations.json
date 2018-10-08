@@ -1,4 +1,4 @@
-{
+﻿{
   "work": [
     
     
@@ -37,7 +37,7 @@
     "className": "dont_matter",
     "imgName": "idontmatter.jpg",
     "year": "2017",
-    "link": " "
+    "link": "/idontmatter/"
   },
   
   
@@ -63,7 +63,7 @@
     "className": "steamed_crab",
     "imgName": "steamedcrab.jpg",
     "year": "2016",
-    "link": " "
+    "link": "/steamedcrab/"
   },
   
   
@@ -89,7 +89,7 @@
     "className": "still_dtf",
     "imgName": "DTF.jpg",
     "year": "2016",
-    "link": " "
+    "link": "/degree/"
   },
   
   
@@ -102,7 +102,7 @@
     "className": "beast_claws",
     "imgName": "BEAST.jpg",
     "year": "2016",
-    "link": " "
+    "link": "/beast/"
   },
   
   
@@ -115,7 +115,7 @@
     "className": "degree_response",
     "imgName": "DEGREE.jpg",
     "year": "2016",
-    "link": " "
+    "link": "/dog/"
   },
   
   
@@ -128,7 +128,7 @@
     "className": "missing_dog",
     "imgName": "missingdog.jpg",
     "year": "2015",
-    "link": " "
+    "link": "/dog/"
   },
   
   
@@ -154,7 +154,7 @@
     "className": "mage_warrior",
     "imgName": "MAGE.jpg",
     "year": "2014",
-    "link": " "
+    "link": "/maw/"
   },
   
   
@@ -167,7 +167,7 @@
     "className": "ash_pikachu",
     "imgName": "ash.jpg",
     "year": "2013",
-    "link": " "
+    "link": "/ash_pika/"
   },
   
   
@@ -180,7 +180,7 @@
     "className": "scream_bucket",
     "imgName": "screambucket.jpg",
     "year": "2011-2014",
-    "link": " "
+    "link": "/comingsoon/"
   }
   
   
@@ -210,12 +210,12 @@
     {
       "imgName": "alone.jpg",
       "altName": "Alone",
-       "link": "illus/donot"
+       "link": "donot"
     },
     {
       "imgName": "ffwr-illust.jpg",
       "altName": "FFWR",
-      "link": "/illus/ffwr"
+      "link": "ffwr"
     },
     
     
@@ -229,7 +229,7 @@
     {
       "imgName": "pig.jpg",
       "altName": "Pig",
-      "link": "/illus/pig"
+      "link": "pig"
 
     },
     
@@ -237,28 +237,28 @@
     {
       "imgName": "christmas.jpg",
       "altName": "Christmas",
-      "link": "/illus/winter2017/"
+      "link": "winter2017/"
     },
     
     
     {
       "imgName": "digimon.jpg",
       "altName": "Digimon",
-      "link": "/illus/digi/"
+      "link": "digi/"
     },
     
     
     {
       "imgName": "anime.jpg",
       "altName": "Anime",
-      "link": "/illus/anime/"
+      "link": "anime/"
     },
     
     
     {
       "imgName": "mario.jpg",
       "altName": "Mario",
-      "link": "/illus/mario/"
+      "link": "mario/"
     }
     
     
