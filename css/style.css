@@ -115,8 +115,7 @@ header {
   width: 100%;
   float: left;
   color: #fff;
-  min-height: 45vw;
-  background: url(../img/headerblur.png) top center/cover no-repeat fixed; }
+  min-height: 45vw; }
   header .banner {
     margin-top: 55px;
     min-width: 100%;
