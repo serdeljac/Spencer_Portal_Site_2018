@@ -31,7 +31,7 @@
 <body>
   <!--
     NEEDED:
-    Description content
+    Description content LINE 8 into context brackets
     Shop link
   -->
   <div class="pageload">
@@ -165,10 +165,10 @@
           darkText = " dtxt";
         }
         if (art.nsfw == true) {
-          nsfw = "NSFW";
+          nsfw = " NSFW";
         }
 
-        $('#projects').append('<article class="'+className+darkText+panelSize+
+        $('#projects').append('<article class="'+className+nsfw+darkText+panelSize+
           '"><a href="'+link+
           '" target="_blank"><div class="art_wrapper" style="background-image: url(proj/'+img+
           '"><p>'+year+
@@ -183,7 +183,7 @@
           imgLink = illus.link,
           altName = illus.altName;
 
-          $('#illustrations').append('<div><a href="'+imgLink
+          $('#illustrations').append('<div><a href="illus/'+imgLink
           +'" target="_blank"><img src="illus/'+imgName+
           '" alt="'+altName+'" /></a></div>');
         }
@@ -215,7 +215,7 @@
             $('article .art_wrapper').height(winW * .5);
             $('article.large .art_wrapper').height(winW);
           }
-        $('footer').height(winW * .42);
+        $('footer').height(winW * .47);
       }
     });
   </script>
