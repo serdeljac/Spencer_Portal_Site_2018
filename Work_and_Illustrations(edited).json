@@ -29,19 +29,6 @@
   
   
   {
-    "title": "I DON'T MATTER",
-    "smallPanel": true,
-    "nsfw": false,
-    "darkText": false,
-    "catagory": "comic",
-    "className": "dont_matter",
-    "imgName": "idontmatter.jpg",
-    "year": "2017",
-    "link": " "
-  },
-  
-  
-  {
     "title": "WUSS CLUB",
     "smallPanel": true,
     "nsfw": false,
@@ -52,22 +39,8 @@
     "year": "2018",
     "link": "https://wuss.club"
   },
-  
-  
-  {
-    "title": "STEAMED CRAB",
-    "smallPanel": true,
-    "nsfw": true,
-    "darkText": true,
-    "catagory": "comic",
-    "className": "steamed_crab",
-    "imgName": "steamedcrab.jpg",
-    "year": "2016",
-    "link": " "
-  },
-  
-  
-  {
+
+    {
     "title": "AND THE WOMAN WAS<br /> HAPPY",
     "smallPanel": false,
     "nsfw": false,
@@ -77,6 +50,29 @@
     "imgName": "and_the_woman_was_happy.jpg",
     "year": "2017",
     "link": "/happy/"
+  },
+
+  {
+    "title": "I DON'T MATTER",
+    "smallPanel": true,
+    "nsfw": false,
+    "darkText": false,
+    "catagory": "comic",
+    "className": "dont_matter",
+    "imgName": "idontmatter.jpg",
+    "year": "2017",
+    "link": "/idontmatter/"
+  },
+  {
+    "title": "STEAMED CRAB",
+    "smallPanel": true,
+    "nsfw": true,
+    "darkText": true,
+    "catagory": "comic",
+    "className": "steamed_crab",
+    "imgName": "steamedcrab.jpg",
+    "year": "2016",
+    "link": "/steamedcrab/"
   },
   
   
@@ -89,7 +85,7 @@
     "className": "still_dtf",
     "imgName": "DTF.jpg",
     "year": "2016",
-    "link": " "
+    "link": "/degree/"
   },
   
   
@@ -102,7 +98,7 @@
     "className": "beast_claws",
     "imgName": "BEAST.jpg",
     "year": "2016",
-    "link": " "
+    "link": "/beast/"
   },
   
   
@@ -115,7 +111,7 @@
     "className": "degree_response",
     "imgName": "DEGREE.jpg",
     "year": "2016",
-    "link": " "
+    "link": "/dog/"
   },
   
   
@@ -128,7 +124,7 @@
     "className": "missing_dog",
     "imgName": "missingdog.jpg",
     "year": "2015",
-    "link": " "
+    "link": "/dog/"
   },
   
   
@@ -146,7 +142,7 @@
   
   
   {
-    "title": "Warrior <br />and Mage",
+    "title": "Mage <br />and Warrior",
     "smallPanel": true,
     "nsfw": false,
     "darkText": false,
@@ -154,7 +150,7 @@
     "className": "mage_warrior",
     "imgName": "MAGE.jpg",
     "year": "2014",
-    "link": " "
+    "link": "/maw/"
   },
   
   
@@ -167,7 +163,7 @@
     "className": "ash_pikachu",
     "imgName": "ash.jpg",
     "year": "2013",
-    "link": " "
+    "link": "/ash_pika/"
   },
   
   
@@ -180,7 +176,7 @@
     "className": "scream_bucket",
     "imgName": "screambucket.jpg",
     "year": "2011-2014",
-    "link": " "
+    "link": "/comingsoon/"
   }
   
   
@@ -209,26 +205,26 @@
   "illust": [
     {
       "imgName": "alone.jpg",
-      "altName": "Alone",
-       "link": "illus/donot"
+      "altName": "Alone"
+       "link": "/illus/donot"
     },
     {
       "imgName": "ffwr-illust.jpg",
-      "altName": "FFWR",
+      "altName": "FFWR"
       "link": "/illus/ffwr"
     },
     
     
     {
       "imgName": "poke.jpg",
-      "altName": "Poke",
+      "altName": "Poke"
       "link": "https://twitter.com/PIZZASCRUB/status/872681263806652416"
     },
     
     
     {
       "imgName": "pig.jpg",
-      "altName": "Pig",
+      "altName": "Pig"
       "link": "/illus/pig"
 
     },
@@ -236,30 +232,33 @@
     
     {
       "imgName": "christmas.jpg",
-      "altName": "Christmas",
+      "altName": "Christmas"
       "link": "/illus/winter2017/"
     },
     
     
     {
       "imgName": "digimon.jpg",
-      "altName": "Digimon",
+      "altName": "Digimon"
       "link": "/illus/digi/"
     },
     
     
     {
       "imgName": "anime.jpg",
-      "altName": "Anime",
+      "altName": "Anime"
       "link": "/illus/anime/"
     },
     
     
     {
       "imgName": "mario.jpg",
-      "altName": "Mario",
+      "altName": "Mario"
       "link": "/illus/mario/"
     }
+    
+   
+    
     
     
     

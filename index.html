@@ -29,7 +29,11 @@
 </head>
 
 <body>
-
+  <!--
+    NEEDED:
+    Description content
+    Shop link
+  -->
   <div class="pageload">
     <div><img src="favicon.png" alt="Spencer Soares" /></div>
   </div>
@@ -40,21 +44,21 @@
         <li><a href="#toppage">Home</a></li>
         <li><a href="#projects">Work</a></li>
         <li><a href="#illustrations">Illustrations</a></li>
-        <li><a href="">my Blog</a></li>
-        <li><a href="">Shop</a></li>
+        <li><a href="http://spencersoares.tumblr.com" target="_blank">my Blog</a></li>
+        <li><a href="" target="_blank">Shop</a></li>
       </ul>
     </nav>
 
     <aside class="social_links">
       <div>
-        <a href="https://www.facebook.com/ft.spencersoares/" target="_blank">
-          <div class="facebook"></div>
-        </a>
         <a href="https://twitter.com/PIZZASCRUB" target="_blank">
           <div class="twitter"></div>
         </a>
         <a href="https://www.instagram.com/pizza.scrub/" target="_blank">
           <div class="instagram"></div>
+        </a>
+        <a href="https://www.facebook.com/spncrsrs/" target="_blank">
+          <div class="facebook"></div>
         </a>
         <a href="http://spencersoares.tumblr.com" target="_blank">
           <div class="tumblr"></div>
@@ -100,11 +104,11 @@
   <footer>
     <div class="navigate">
       <ul>
-        <li><a href="https://www.facebook.com/ft.spencersoares/" target="_blank">facebook</a></li>
+        <li><a href="https://www.facebook.com/spncrsrs/" target="_blank">facebook</a></li>
         <li><a href="https://twitter.com/PIZZASCRUB" target="_blank">twitter</a></li>
         <li><a href="mailto:soares.spencer@gmail.com">email</a></li>
         <li><a href="https://www.instagram.com/pizza.scrub/" target="_blank">instigram</a></li>
-      <li><a href="">blog</a></li>
+        <li><a href="http://spencersoares.tumblr.com">blog</a></li>
       </ul>
     </div>
   </footer>
@@ -176,10 +180,12 @@
 
         function appendIllustrationData(illus) {
           var imgName = illus.imgName,
+          imgLink = illus.link,
           altName = illus.altName;
 
-          $('#illustrations').append('<div><img src="illus/'+imgName+
-          '" alt="'+altName+'" /></div>');
+          $('#illustrations').append('<div><a href="'+imgLink
+          +' target="_blank"><img src="illus/'+imgName+
+          '" alt="'+altName+'" /></a></div>');
         }
   </script>
   <script>
