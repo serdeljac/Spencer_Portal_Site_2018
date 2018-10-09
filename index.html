@@ -175,7 +175,13 @@
           '</p><p>'+nsfw+
           '</p><h3>'+title+
           '</h3><p>'+catagory+
-          '</p></div></a></article>');
+          '</p></div></a></article>'+addClear(panelSize));
+        }
+
+        function addClear(x) {
+          if (x == ' large') {
+            return '<div class="clear"></div>'
+          }else {return '';}
         }
 
         function appendIllustrationData(illus) {
