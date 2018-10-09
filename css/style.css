@@ -144,15 +144,15 @@ main h2 { width: 100%; font-size: 3.4em; margin: 25px 0; text-align: center; fon
 #projects article:hover h3 { text-decoration: underline; }
 
 @media only screen and (max-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003255}}
-  #projects article { height: 50vw; }
+  #projects article { height: 25vw; }
 @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003257}}
-  #projects article.large { height: 100vw; }
+  #projects article.large { height: 50vw; }
 @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003258}}
   #projects article .art_wrapper { width: 100%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003259}}
-  #projects article h3 { font-size: 5.2vw; }
+  #projects article h3 { font-size: 4.2vw; }
 @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003260}}
-  #projects article p { font-size: 3.6vw; } }
+  #projects article p { font-size: 2.6vw; } }
 /***************************************************** Illustration Works
 *****************************************************/
 @media -sass-debug-info{filename{font-family:file\:\/\/Z\:\/Github\/Spencer_Portal_Site_2018\/css\/style\.scss}line{font-family:\00003268}}

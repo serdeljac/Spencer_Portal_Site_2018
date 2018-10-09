@@ -253,11 +253,11 @@ main {
 
 @media only screen and (max-width: 768px) {
   #projects article {
-    height: 50vw;
-    &.large {height: 100vw;}
+    height: 25vw;
+    &.large {height: 50vw;}
     .art_wrapper {width: 100%;}
-    h3 {font-size: 5.2vw}
-    p {font-size: 3.6vw}
+    h3 {font-size: 4.2vw}
+    p {font-size: 2.6vw}
     }
   }
 
