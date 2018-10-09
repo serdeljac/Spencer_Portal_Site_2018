@@ -9,12 +9,11 @@
   box-sizing: border-box;
   }
 
-a, a:hover {text-decoration: none; color: #fff;}
-
 body {
   background-color: #000;
   font-family: 'Nunito Sans', sans-serif;
   color: #fff;
+  a, a:hover {text-decoration: none; color: #fff;}
   }
 
 /*****************************************************
@@ -32,7 +31,7 @@ body {
 *****************************************************/
 .navigation {
   position: fixed;
-  top: 0;
+  top: 0; left: 0;
   width: 100%;
   z-index: 998;
   background-color: #000;
@@ -205,11 +204,16 @@ main {
 *****************************************************/
 #projects {
   width: 100%;
+  .container, .row, .row article {margin: 0; padding: 0; width: 100%; max-width: none; }
   article.dtxt {h3, p {color: #000}}
   article.NSFW .art_wrapper p:nth-of-type(2) {text-align: right;}
   article {
+    float: left;
+    width: 50%;
+    & .art_wrapper {height: 25vw;}
+    &.large .art_wrapper {height: 50vw;}
     .art_wrapper {
-      width: 50%;
+      width: 100%;
       background-size: cover;
       float: left;
       padding: 0px 3%;
@@ -248,6 +252,8 @@ main {
 
 @media only screen and (max-width: 768px) {
   #projects article {
+    height: 50vw;
+    &.large {height: 100vw;}
     .art_wrapper {width: 100%;}
     h3 {font-size: 5.2vw}
     p {font-size: 3.6vw}
@@ -284,6 +290,7 @@ footer {
   margin-top: 60px;
   float: left;
   min-height: 380px;
+  height: 47vw;
   background: url(../img/footerbg.png) center/100% 100% no-repeat;
 
   .navigate {
