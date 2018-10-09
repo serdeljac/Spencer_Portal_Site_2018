@@ -1,20 +1,20 @@
 ﻿{
   "work": [
-    
-    
-  {
-    "title": "FAN FICTION WRITER'S<br /> ROOM",
-    "smallPanel": false,
-    "nsfw": false,
-    "darkText": false,
-    "catagory": "podcast",
-    "className": "fan_fiction",
-    "imgName": "ffwr.jpg",
-    "year": "2018",
-    "link": "http://www.ffwr.show/"
-  },
-  
-  
+
+    {
+      "title": "FAN FICTION WRITER'S<br /> ROOM",
+      "smallPanel": false,
+      "nsfw": false,
+      "darkText": false,
+      "catagory": "podcast",
+      "className": "fan_fiction",
+      "imgName": "ffwr.jpg",
+      "year": "2018",
+      "link": "http://www.ffwr.show/"
+    },
+
+
+
   {
     "title": "MBMBAM ANIMATED: <br />HUMPING AT THE ZOO",
     "smallPanel": true,
@@ -26,8 +26,8 @@
     "year": "2018",
     "link": "https://www.youtube.com/watch?v=hOVlkI-9K4Y"
   },
-  
-  
+
+
   {
     "title": "I DON'T MATTER",
     "smallPanel": true,
@@ -39,8 +39,8 @@
     "year": "2017",
     "link": "/idontmatter/"
   },
-  
-  
+
+
   {
     "title": "WUSS CLUB",
     "smallPanel": true,
@@ -52,8 +52,8 @@
     "year": "2018",
     "link": "https://wuss.club"
   },
-  
-  
+
+
   {
     "title": "STEAMED CRAB",
     "smallPanel": true,
@@ -65,8 +65,8 @@
     "year": "2016",
     "link": "/steamedcrab/"
   },
-  
-  
+
+
   {
     "title": "AND THE WOMAN WAS<br /> HAPPY",
     "smallPanel": false,
@@ -78,8 +78,8 @@
     "year": "2017",
     "link": "/happy/"
   },
-  
-  
+
+
   {
     "title": "BUT I’M STILL DTF",
     "smallPanel": false,
@@ -91,8 +91,8 @@
     "year": "2016",
     "link": "/degree/"
   },
-  
-  
+
+
   {
     "title": "NOT ALL BEASTS ARE BORN<br /> WITH CLAWS",
     "smallPanel": false,
@@ -104,8 +104,8 @@
     "year": "2016",
     "link": "/beast/"
   },
-  
-  
+
+
   {
     "title": "DEGREE OF RESPONSIBILITY",
     "smallPanel": true,
@@ -117,8 +117,8 @@
     "year": "2016",
     "link": "/dog/"
   },
-  
-  
+
+
   {
     "title": "Missing Dog",
     "smallPanel": true,
@@ -130,8 +130,8 @@
     "year": "2015",
     "link": "/dog/"
   },
-  
-  
+
+
   {
     "title": "Take your son <br />to work day",
     "smallPanel": true,
@@ -143,8 +143,8 @@
     "year": "2014",
     "link": "https://www.youtube.com/watch?v=CP5Y-t4dD2I"
   },
-  
-  
+
+
   {
     "title": "Warrior <br />and Mage",
     "smallPanel": true,
@@ -156,8 +156,8 @@
     "year": "2014",
     "link": "/maw/"
   },
-  
-  
+
+
   {
     "title": "ASH AND PIKACHU:<br /> FAREWELL",
     "smallPanel": true,
@@ -169,8 +169,8 @@
     "year": "2013",
     "link": "/ash_pika/"
   },
-  
-  
+
+
   {
     "title": "Scream Bucket",
     "smallPanel": true,
@@ -182,30 +182,30 @@
     "year": "2011-2014",
     "link": "/comingsoon/"
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   ],
-  
-  
+
+
   "illust": [
     {
       "imgName": "alone.jpg",
@@ -217,81 +217,81 @@
       "altName": "FFWR",
       "link": "ffwr"
     },
-    
-    
+
+
     {
       "imgName": "poke.jpg",
       "altName": "Poke",
       "link": "https://twitter.com/PIZZASCRUB/status/872681263806652416"
     },
-    
-    
+
+
     {
       "imgName": "pig.jpg",
       "altName": "Pig",
       "link": "pig"
 
     },
-    
-    
+
+
     {
       "imgName": "christmas.jpg",
       "altName": "Christmas",
       "link": "winter2017/"
     },
-    
-    
+
+
     {
       "imgName": "digimon.jpg",
       "altName": "Digimon",
       "link": "digi/"
     },
-    
-    
+
+
     {
       "imgName": "anime.jpg",
       "altName": "Anime",
       "link": "anime/"
     },
-    
-    
+
+
     {
       "imgName": "mario.jpg",
       "altName": "Mario",
       "link": "mario/"
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ]
 }

@@ -192,18 +192,9 @@
 
       $(this).scrollTop(0);
 
-      headertitle();
 
 
-      $(window).resize(function() {
-        headertitle();
 
-      });
-
-      function headertitle() {
-        var imgH = $('header h1:first-of-type').height();
-        $('header .wrapper').css('top', 365 - imgH);
-      }
 
 
     });
