@@ -167,9 +167,10 @@
           nsfw = " NSFW";
         }
 
+
         $('#projects').append('<article class="'+className+nsfw+darkText+panelSize+
           '"><a href="'+link+
-          '" target="_blank"><div class="art_wrapper" style="background-image: url(proj/'+img+
+          '" '+addTarget(link)+'><div class="art_wrapper" style="background-image: url(proj/'+img+
           '"><p>'+year+
           '</p><p>'+nsfw+
           '</p><h3>'+title+
@@ -183,8 +184,16 @@
           altName = illus.altName;
 
           $('#illustrations').append('<div><a href="illus/'+imgLink
-          +'" target="_blank"><img src="illus/'+imgName+
+          +'" '+addTarget(imgLink)+'><img src="illus/'+imgName+
           '" alt="'+altName+'" /></a></div>');
+        }
+
+        function addTarget(newLink) {
+          if (newLink.substring(0,4) == 'http') {
+            return 'target="_blank"';
+          }else{
+            return '';
+          }
         }
   </script>
   <script>
